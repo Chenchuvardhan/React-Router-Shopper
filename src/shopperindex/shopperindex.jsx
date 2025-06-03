@@ -1,6 +1,6 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router"
 import { Productitems } from "../shopperproducts/shopperproducts"
-
+import './shopperindex.css';
 export const Shopper = () => {
     return (
         <div>
@@ -10,11 +10,11 @@ export const Shopper = () => {
                         Shopper.
                     </div>
                     <div className="d-flex ">
-                        <Link to="/products" className="btn text-dark mx-2 fw-bold fs-5">All</Link>
-                        <Link to="category/electronics" className="btn text-dark mx-2 fw-bold fs-5"> Electronics</Link>
-                        <Link to="category/jewelery" className="btn text-dark mx-2 fw-bold fs-5" >Jewellery</Link>
-                        <Link to="category/men's clothing" className="btn text-dark mx-2 fw-bold fs-5" >Men's Fashion</Link>
-                        <Link to="women's clothing" className="btn text-dark mx-2 fw-bold fs-5" >Women's Fashion</Link>
+                        <Link to="/products" className="btn text-dark mx-2 fw-bold fs-5 navlinks">All</Link>
+                        <Link to="category/electronics" className="btn text-dark mx-2 fw-bold fs-5 navlinks" > Electronics</Link>
+                        <Link to="category/jewelery" className="btn text-dark mx-2 fw-bold fs-5 navlinks" >Jewellery</Link>
+                        <Link to="category/men's clothing" className="btn text-dark mx-2 fw-bold fs-5 navlinks" >Men's Fashion</Link>
+                        <Link to="women's clothing" className="btn text-dark mx-2 fw-bold fs-5 navlinks">Women's Fashion</Link>
                     </div>
                     <div className="d-flex">
                         <span className="bi bi-heart mx-2 fw-bold"></span>
